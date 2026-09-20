@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜味开胃菜 - 轻松惬意的味蕾前奏与精选食谱指南</title>
+    <meta name="description" content="探索甜味开胃菜的无限可能，从清爽水果沙拉到精致慕斯，为您提供创意食谱、搭配技巧和用餐灵感，让每一餐的起始都充满愉悦。">
+    <meta name="keywords" content="甜味开胃菜, 轻食, 食谱, 开胃菜, 水果沙拉, 甜点">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d35400;
+            --secondary-color: #e67e22;
+            --accent-color: #f1c40f;
+            --bg-color: #fff8f0;
+            --text-color: #2c3e50;
+            --light-text: #7f8c8d;
+            --card-bg: #ffffff;
+            --border-radius: 12px;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-color);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .search-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--text-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 80px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.4) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.5;
+            animation: moveBackground 60s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            text-shadow: 0 2px 4px rgba(255,255,255,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 40px;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.8);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--light-text);
+        }
+
+        /* Grid Layout */
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-wrapper {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-meta {
+            font-size: 0.8rem;
+            color: var(--light-text);
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: var(--light-text);
+            margin-bottom: 20px;
+            flex: 1;
+        }
+
+        .card-btn {
+            display: inline-block;
+            text-align: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .card-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-item h3 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .feature-item p {
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 15px;
+            color: var(--light-text);
+            display: none;
+            padding-left: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item:not(.active) .faq-question::after {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            transition: var(--transition);
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            
+            nav {
+                width: 100%;
+                margin-top: 15px;
+                display: none;
+            }
+
+            nav.mobile-active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .menu-toggle {
+                display: block;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span>🥗</span> 甜味开胃菜
+            </a>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#recipes">精选食谱</a></li>
+                    <li><a href="#tips">搭配技巧</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>让每一餐的开始都充满甜蜜惊喜</h1>
+            <p>甜味开胃菜不仅仅是甜点，更是唤醒味蕾的魔法。探索如何用果香、蜜渍和清爽口感，为您的正餐拉开完美的序幕。</p>
+            <div class="hero-tags">
+                <span class="tag">低卡路里</span>
+                <span class="tag">季节限定</span>
+                <span class="tag">零添加</span>
+                <span class="tag">快手料理</span>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="section-title">
+            <h2>热门推荐食谱</h2>
+            <p>精选最受欢迎的甜味前菜，简单易做，效果惊艳</p>
+        </div>
+
+        <div class="recipe-grid">
+            <!-- Recipe 1 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/fruit1/400/300" alt="蓝莓柠檬罗勒塔" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>难度：简单</span>
+                        <span>时间：15分钟</span>
+                    </div>
+                    <h3 class="card-title">蓝莓柠檬罗勒塔</h3>
+                    <p class="card-desc">酸甜的蓝莓与清新的罗勒叶碰撞，搭配柠檬塔皮，口感层次丰富，是夏日餐桌上的点睛之笔。</p>
+                    <a href="#" class="card-btn">查看做法</a>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/salad2/400/300" alt="哈密瓜烟熏三文鱼沙拉" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>难度：中等</span>
+                        <span>时间：20分钟</span>
+                    </div>
+                    <h3 class="card-title">哈密瓜烟熏三文鱼沙拉</h3>
+                    <p class="card-desc">利用哈密瓜天然的清甜中和烟熏三文鱼的咸鲜，撒上少许黑胡椒和橄榄油，健康又美味。</p>
+                    <a href="#" class="card-btn">查看做法</a>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/dessert3/400/300" alt="蜜渍水果拼盘" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>难度：极简</span>
+                        <span>时间：30分钟</span>
+                    </div>
+                    <h3 class="card-title">蜜渍樱桃草莓塔</h3>
+                    <p class="card-desc">将当季水果用蜂蜜慢火熬煮成糖浆，淋在酥脆的塔底上，撒上开心果碎，视觉与味觉的双重享受。</p>
+                    <a href="#" class="card-btn">查看做法</a>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="card">
+                <div class="card-img-wrapper">
+                    <img src="https://picsum.photos/seed/smoothie4/400/300" alt="芒果酸奶冰沙" class="card-img">
+                </div>
+                <div class="card-body">
+                    <div class="card-meta">
+                        <span>难度：简单</span>
+                        <span>时间：5分钟</span>
+                    </div>
+                    <h3 class="card-title">芒果酸奶冰沙</h3>
+                    <p class="card-desc">无需烤箱，将熟透的芒果与酸奶放入搅拌机，打成绵密的冰沙，清爽解腻，适合搭配重口味主菜。</p>
+                    <a href="#" class="card-btn">查看做法</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="section-title">
+            <h2>为什么选择甜味开胃菜？</h2>
+            <p>不仅仅是口味的选择，更是用餐体验的升华</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🧬</div>
+                <h3>平衡味觉</h3>
+                <p>甜味能刺激唾液分泌，激活味蕾，让您在品尝主菜时能更好地感知风味层次。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🧠</div>
+                <h3>提升食欲</h3>
+                <p>轻微的甜味信号向大脑传递“愉悦”信息，有效缓解食欲不振，让用餐变得期待。</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🍽️</div>
+                <h3>缓解油腻</h3>
+                <p>对于重油重盐的晚餐，一道清爽的甜味前菜能迅速清洁口腔，避免味道串味。</p>
+            </div>
+        </div>
+
+        <div class="section-title">
+            <h2>新手入门指南</h2>
+            <p>掌握这些技巧，轻松制作完美甜味前菜</p>
+        </div>
+
+        <div class="faq-section">
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">甜味开胃菜应该控制在多少热量？</div>
+                <div class="faq-answer">
+                    通常建议控制在 100-200 大卡之间。以水果、低脂酸奶、蜂蜜和天然代糖为主要原料，避免使用奶油和过多的糖浆，即可保持低卡又满足甜味需求。
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">什么时间吃甜味开胃菜最合适？</div>
+                <div class="faq-answer">
+                    甜味开胃菜最好在正餐开始前 15-30 分钟食用。此时空腹状态最能感受到其甜味的刺激作用，也能为后续的主菜提供更好的味觉铺垫。
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <div class="faq-question">可以提前准备甜味开胃菜吗？</div>
+                <div class="faq-answer">
+                    部分沙拉类可以提前切好，但最好在食用前 5-10 分钟淋上酱汁，以免水果氧化变色或失去脆度。果酱和糖渍类可以提前熬制好，冷藏保存。
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>关于甜味开胃菜</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem;">我们致力于分享健康、创意且美味的甜味前菜食谱，帮助您提升家庭聚餐的品质与乐趣。</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">食谱大全</a></li>
+                    <li><a href="#">食材搭配</a></li>
+                    <li><a href="#">季节推荐</a></li>
+                    <li><a href="#">厨房小技巧</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li><a href="#">合作投稿</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">关注我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 甜味开胃菜. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('mobile-active');
+        }
+
+        // Toggle FAQ Accordion
+        function toggleFaq(element) {
+            // Close all other items
+            const items = document.querySelectorAll('.faq-item');
+            items.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            // Toggle current item
+            element.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('mobile-active');
+            });
+        });
+    </script>
+</body>
+</html>
