@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>落魄贵族琉璃川-古风人物志与传奇故事</title>
+    <meta name="description" content="落魄贵族琉璃川专题页，收录关于琉璃川的生平资料、家族兴衰、情感纠葛及经典文学影视改编，探索这位历史人物的悲剧美学与艺术形象。">
+    <meta name="keywords" content="落魄贵族琉璃川,古风人物,传奇故事,文学影视">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #D2B48C;
+            --accent-color: #B22222;
+            --bg-color: #FDFBF7;
+            --text-main: #2C2C2C;
+            --text-light: #666;
+            --card-bg: #FFFFFF;
+            --border-color: #E0D8D0;
+            --shadow: 0 4px 12px rgba(139, 69, 19, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "SimSun", serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/ancient/1600/900') no-repeat center center/cover;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            font-family: "Songti SC", "SimSun", serif;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            border-color: #fff;
+        }
+
+        /* Main Layout */
+        main {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-family: "Songti SC", serif;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* Biography Section */
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .bio-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        .bio-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 4px solid var(--secondary-color);
+        }
+
+        .bio-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .bio-card ul {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .bio-card li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .bio-card strong {
+            color: var(--primary-color);
+        }
+
+        .bio-text {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        .bio-text h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .bio-text p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Works/Works Section */
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .work-item {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+            border: 1px solid var(--border-color);
+        }
+
+        .work-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .work-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .work-content {
+            padding: 20px;
+        }
+
+        .work-tag {
+            font-size: 12px;
+            color: var(--accent-color);
+            background: rgba(178, 34, 34, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .work-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .work-content p {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .quote-text {
+            font-size: 1.5rem;
+            font-family: "Songti SC", serif;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 15px;
+            border-radius: 4px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            background-color: #fff;
+        }
+
+        .faq-question:hover {
+            background-color: #fcfcfc;
+        }
+
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            color: var(--text-light);
+            background-color: #fafafa;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 200px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item.active .faq-question::before {
+            content: '+';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b2b2b;
+            color: #ccc;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+            }
+
+            .bio-card {
+                order: -1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">
+                琉璃川 <span>落魄贵族</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#profile" class="active">人物生平</a></li>
+                    <li><a href="#works">经典演绎</a></li>
+                    <li><a href="#analysis">人物分析</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>落魄贵族琉璃川</h1>
+            <p>在历史的尘埃中，琉璃川不仅是一个名字，更是一种关于家族兴衰与个人命运的深刻隐喻。探寻这位人物背后的悲怆与坚韧。</p>
+            <a href="#profile" class="btn">了解他的故事</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <!-- Biography Section -->
+        <section id="profile" class="bio-grid">
+            <article class="bio-card">
+                <img src="https://picsum.photos/seed/artist/300/300" alt="琉璃川人物画像" class="bio-avatar">
+                <h3>琉璃川</h3>
+                <p style="color:var(--text-light); font-size:14px; margin-bottom:15px;">虚构/历史原型人物</p>
+                <ul>
+                    <li><strong>身份：</strong> 琉璃川公爵府独子</li>
+                    <li><strong>时代：</strong> 中古架空/历史动荡期</li>
+                    <li><strong>特征：</strong> 才华横溢却怀才不遇</li>
+                    <li><strong>结局：</strong> 归隐山林，不知所踪</li>
+                </ul>
+            </article>
+            
+            <div class="bio-text">
+                <h3>家族的黄昏与个人的觉醒</h3>
+                <p>琉璃川的故事往往始于一场盛大的宴席，却终于一场无声的离别。作为没落贵族的代表，他的一生都在与家族的旧日荣光作斗争。不同于传统英雄的逆袭，琉璃川的形象更侧重于内心的挣扎与对现实的妥协。</p>
+                <p>在动荡的时代背景下，他面临着“保家卫国”与“独善其身”的两难选择。他的才情曾让他在朝堂之上熠熠生辉，但家族的没落让他不得不放下身段，去面对市井的冷暖与权力的倾轧。这种从云端跌落泥潭的经历，构成了琉璃川这一角色最核心的戏剧张力。</p>
+                <h3>艺术形象的多重解读</h3>
+                <p>在文学与影视作品中，琉璃川常被赋予忧郁、内敛的性格。他的悲剧不仅仅是个人的不幸，更是那个时代贵族阶层整体命运的缩影。许多创作者通过他探讨“贵族精神”在现代社会中的存续问题，以及当理想主义遭遇现实残酷时的必然崩塌。</p>
+            </div>
+        </section>
+
+        <!-- Quote Divider -->
+        <section class="quote-section">
+            <div class="container">
+                <p class="quote-text">“琉璃川的悲剧不在于他一无所有，而在于他明明拥有了一切，却只觉得那是牢笼。他最终选择的不是生存，而是尊严。”</p>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works">
+            <div class="section-title">
+                <h2>经典演绎</h2>
+                <p>关于琉璃川的影视、小说及戏剧改编</p>
+            </div>
+            <div class="works-grid">
+                <article class="work-item">
+                    <img src="https://picsum.photos/seed/novel/400/300" alt="小说封面" class="work-img">
+                    <div class="work-content">
+                        <span class="work-tag">小说改编</span>
+                        <h3>《琉璃川旧梦》</h3>
+                        <p>作者以细腻的笔触描绘了琉璃川在家族败落后的心路历程，被誉为当代古风文学的经典之作。</p>
+                        <a href="#" style="color:var(--primary-color); font-size:14px;">阅读章节 &rarr;</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <img src="https://picsum.photos/seed/movie/400/300" alt="电影海报" class="work-img">
+                    <div class="work-content">
+                        <span class="work-tag">电影</span>
+                        <h3>《最后的贵族》</h3>
+                        <p>通过黑白胶片的质感，重现了琉璃川那个时代的苍凉与悲壮，获得多项国际电影节提名。</p>
+                        <a href="#" style="color:var(--primary-color); font-size:14px;">观看预告 &rarr;</a>
+                    </div>
+                </article>
+                <article class="work-item">
+                    <img src="https://picsum.photos/seed/drama/400/300" alt="电视剧截图" class="work-img">
+                    <div class="work-content">
+                        <span class="work-tag">电视剧</span>
+                        <h3>《川流不息》</h3>
+                        <p>现代视角下的琉璃川，讲述了一位现代设计师试图复原家族历史的故事，引发观众对身份认同的思考。</p>
+                        <a href="#" style="color:var(--primary-color); font-size:14px;">查看剧集 &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Analysis Section -->
+        <section id="analysis" style="margin-top: 60px;">
+            <div class="section-title">
+                <h2>人物深度解析</h2>
+                <p>为何“落魄贵族”琉璃川能跨越时空引发共鸣？</p>
+            </div>
+            <div class="bio-text" style="padding: 30px;">
+                <p><strong>1. 优雅的崩溃：</strong> 琉璃川这一形象最迷人的地方在于他即使身处逆境，依然保持着贵族的体面与修养。这种“优雅的崩溃”打破了传统叙事中英雄必须大杀四方的套路，赋予了人物更丰富的人性层次。</p>
+                <p><strong>2. 理想主义者的挽歌：</strong> 他代表了那些在现实面前无法妥协的理想主义者。他的失败不是因为无能，而是因为清醒。这种清醒是痛苦的，也是迷人的。</p>
+                <p><strong>3. 社会阶层的隐喻：</strong> 在很多解读中，琉璃川不再仅仅是一个具体的人，而是一个符号，象征着正在逐渐消逝的传统绅士风度与社会结构。</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="margin-top: 60px;">
+            <div class="section-title">
+                <h2>常见问题</h2>
+                <p>关于琉璃川形象的常见疑问解答</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">琉璃川是真实存在的历史人物吗？</div>
+                    <div class="faq-answer">
+                        <p>在正史记载中，并没有完全对应“琉璃川”这一确切姓名的著名历史人物。他更多是后世文学作品、影视作品及网络文学中创造出的典型“落魄贵族”形象，或者是基于某位历史名士的艺术化加工。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">琉璃川这一形象最典型的特征是什么？</div>
+                    <div class="faq-answer">
+                        <p>最典型的特征包括：才华横溢但仕途坎坷、即使落魄依然保持体面与修养、对家族荣誉的执念以及最终选择归隐或自我放逐的结局。他的性格往往被描绘为内敛、忧郁且坚韧。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">这类故事反映了怎样的社会心理？</div>
+                    <div class="faq-answer">
+                        <p>这类故事反映了人们对“贵族精神”的向往以及对现实阶层固化的无奈。它寄托了人们对于才华不应被埋没的渴望，同时也表达了在现实压力下，个体对精神自由和尊严的追求。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>关于琉璃川</h4>
+                    <p style="font-size: 14px; line-height: 1.6;">
+                        本站致力于整理与展示“落魄贵族琉璃川”这一文化符号相关的文学、影视资料及深度评论，为读者提供一个全面了解该人物形象的平台。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>相关链接</h4>
+                    <ul>
+                        <li><a href="#">经典小说</a></li>
+                        <li><a href="#">影视赏析</a></li>
+                        <li><a href="#">人物年表</a></li>
+                        <li><a href="#">社区讨论</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>邮箱：contact@luciichuan.com</li>
+                        <li>地址：文化创意产业园A栋</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 落魄贵族琉璃川专题页. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ accordion logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
